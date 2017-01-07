@@ -15,7 +15,7 @@ from google.appengine.ext import ndb
 from BotFunctions import *
 import webapp2
 
-TOKEN = '291293792:AAH8WHPfjlrOEdHJPFhiAkFjgkMb4G04Dic'
+TOKEN = 'TOKEN'
 
 BASE_URL = 'https://api.telegram.org/bot' + TOKEN + '/'
 
