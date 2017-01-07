@@ -15,7 +15,7 @@ from google.appengine.ext import ndb
 from BotFunctions import *
 import webapp2
 
-TOKEN = 'TOKEN'
+TOKEN = '291293792:AAH8WHPfjlrOEdHJPFhiAkFjgkMb4G04Dic'
 
 BASE_URL = 'https://api.telegram.org/bot' + TOKEN + '/'
 
@@ -128,8 +128,6 @@ class WebhookHandler(webapp2.RequestHandler):
             elif text.startswith('/about'):
                 if getEnabled(chat_id) == True:
                     reply(msg=send_about())
-            else:
-                reply("Comando no valido")
         else:                
             if getEnabled(chat_id) == True:
                 msg = echo_all(message)
